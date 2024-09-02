@@ -1,0 +1,151 @@
+
+body {
+    background: var(--dark);
+
+}
+
+.contact {
+    color: var(--light);
+}
+
+.contact .wrapper {
+    margin-top: clamp(10rem ,20vh , 20rem) ;
+
+}
+
+.contact-info-card {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1.8rem;
+
+}
+.contact-info-card .primary-heading {
+    padding: 1.2rem 0;
+
+}
+
+
+
+
+.info-box {
+    display: flex;
+    gap: 1rem;
+    padding: 0.8rem 0;
+
+}
+
+.info-box-text {
+    padding: 0 0.4rem;
+}
+
+.info-box .contact-icon {
+    font-size: var(--fs-600);
+    padding: 0.8rem 0;
+
+}
+
+.info-box-text .secondary-heading {
+    padding: 0.6rem 0;
+
+}
+
+.info-box .info-description {
+    font-weight: 600;
+    opacity: 0.6;
+    line-height: 1.2;
+    font-size: var(--fs-450);
+
+}
+
+.contact-form-card {
+    flex: 1;
+    /* background: green; */
+    padding: 2.4rem 7.6rem;
+    position: relative;
+    background: #0a0a0a6b;
+    
+    
+}
+
+.contact-form-card .secondary-heading {
+    padding: 2.4rem 0;
+}
+
+.contact-form-card form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    font-size: var(--fs-450);
+    font-weight: 600;
+    padding: 0.4rem  0;
+}
+
+input,textarea {
+    padding: 0.8rem 0.4rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+form .btn {
+    border: none;
+    outline: none;
+    background: var(--primary);
+    color: var(--light);
+    margin: 2rem 0;
+}
+
+.circle {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    padding: 23px;
+    z-index: -1;
+}
+
+.circle:first-child {
+    left: -5%;
+    background: rgb(132, 87, 255);
+    filter: brightness(120%);
+    box-shadow:1px 1px 15px 4px  rgb(113, 61, 255);
+
+}
+
+.circle:last-child {
+    right: 0;
+    bottom: 1%;
+
+    background: rgb(82, 255, 168);
+    filter: brightness(120%);
+    box-shadow:1px 1px 15px 4px  rgb(82, 255, 168);
+
+}
+
+
+
+/* .contact-form-card::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form-card::after {
+    top: 0;
+    left: 0%;
+    filter: blur(3px);
+
+  
+} */
+/* 
+.contact-form-card::after {
+    right: 0;
+    top: 0%;
+    background-color: #1b12122c;
+
+} */

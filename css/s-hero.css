@@ -1,0 +1,71 @@
+
+.section-hero {
+    background-color: var(--tint);
+
+}
+
+.hero {
+    grid-template-areas: "htb hib";
+    margin-top: clamp(10rem ,20vh , 20rem) ;
+    padding-bottom: 6.4rem;
+    gap: 2.4rem;
+}
+
+.hero-text-tag {
+    font-weight: 600;
+}
+
+.hero-text-box {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.hero-description {
+    margin: 3.8rem 0;
+    font-size: var(--fs-450);
+    font-weight: 600;
+    color: var(--grey);
+    opacity: 0.7;
+    line-height: 2;
+    padding-right: 2.4rem;
+}
+
+.hero-image-box {
+    grid-template-areas: "box1 box3" 
+    "box2 box3";
+    gap: 1.6rem;
+
+
+}
+
+.image-box {
+    border-radius: var(--border-r);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+
+.image-box:last-child{
+    height: 40rem;
+}
+
+.image-box-1 {
+    grid-area: box1;
+    background-image: url(../assets/bg2.jpg);
+
+} 
+
+.image-box-2 {
+    grid-area: box2;
+    background-image: url(../assets/right_bg.svg);
+
+}
+.image-box-3 {
+    grid-area: box3;
+    background-image: url(../assets/bg1.jpg);
+
+
+}

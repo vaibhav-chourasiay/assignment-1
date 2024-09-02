@@ -1,0 +1,376 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: #e67e22
+- Tints:
+#fdf2e9
+#fae5d3
+#eb984e
+
+- Shades: 
+#cf711f
+#45260a
+
+- Accents:
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+
+    /* --- Font sizes --- */
+      --fs-700: clamp(3.6rem,3vw + 1rem,5.2rem);
+      --fs-650:3.6rem;
+      --fs-600: 2rem;
+      --fs-500: 1.6rem;
+      --fs-450: 1.2rem;
+      --fs-400: 1rem;
+
+    /* Font Family */
+      --ff :sans-serif;
+      --ff-head: "Oswald", sans-serif;
+
+    /* COLORS */
+      --dark: #000;
+      --light: #fff;
+      --primary: #DB0007;
+      --primary: #df1a20;
+      --tint: #fbe6e6;
+    /*  --shades:;
+      --accents:;*/
+      /* --grey : #333;  */
+      --grey: #000;
+
+      /* PADDING */
+      --padd-500: 1.2rem;
+      --padd-400: 0.8rem;
+
+      --border-r: 1rem;
+}
+
+
+
+/* Utitlity Class */
+
+.no-display {
+    display: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.text-3d {
+
+    text-shadow: 
+    1px 1px 0 #bbb,   /* Light grey shadow for depth */
+    2px 2px 0 #aaa,   /* Slightly darker grey shadow */
+    3px 3px 0 #999,   /* Darker grey shadow */
+    4px 4px 0 #888,   /* More pronounced shadow */
+    5px 5px 0 #777;   /* Final, darkest shadow */
+}
+
+.hightlight-box {
+    padding-left: 0.2rem !important;
+    margin-left: 0.2rem !important;
+    border-left: 4px solid red;
+    color: #555;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+form, input {
+    font: inherit;
+}
+
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.pd-md-topbot {
+    margin-top: 4.8rem !important; 
+    margin-bottom: 4.8rem !important;
+
+}
+
+
+
+.wrapper {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+
+/* GRID */
+
+.grid {
+    display: grid;
+    gap: 3.2rem;
+}
+
+.grid--2--cols {
+    grid-template-columns: repeat(2, 1fr)
+}
+
+
+.grid--3--cols {
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.grid--auto--cols {
+    grid-template-columns: repeat(auto-fit, 22rem) ;
+    justify-content: center;
+}
+
+.flex--wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+
+/* CARD */
+
+.card {
+    max-width: 22rem;
+    padding: 3.2rem 2.4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    border-radius:var(--border-r); 
+     
+}
+
+/* MARGIN AND PADDING */
+
+.pd-b-md {
+    padding-bottom: 3.2rem;
+}
+
+.pd-b-lg {
+    padding-bottom: 6.4rem !important   ;
+}
+
+.pd-md-tb {
+    padding:1rem 0;
+}
+
+.pd-md-left-right {
+
+    padding:0 1rem;
+
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.m-r-sm{
+margin-right: 1.6rem;
+
+} 
+.m-b-sm{
+    margin-right: 1.2rem;
+
+}
+
+/* HEADING */
+.primary-heading {
+    font-size: var(--fs-700);
+    font-family: var(--ff-head);
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 1.168;
+}
+
+.secondary-heading {
+    font-size: var(--fs-600);
+    font-family: var(--ff-head);
+}
+
+.section-heading {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 6.4rem 2rem;
+
+ }
+
+.tag {
+    font-family: var(--ff-head);
+    text-transform: capitalize;
+    letter-spacing: 0.7rem;
+    /* font-weight: 900; */
+    font-size: var(--fs-650);
+    color: var(--light);    
+
+    /* text-align: center; */
+    
+}
+
+/* Feature card */
+
+.feature-card-description {
+    font-size: var(--fs-450);
+    font-weight: 600;
+    opacity: 0.3;
+    line-height: 1.3;
+}
+
+
+.feature-icon {
+    font-size: 3.6rem;
+}
+
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    border-radius: var(--border-r);
+    font-weight: 600;
+    font-size: 1.2rem;
+
+}
+
+.btn--full {
+    background-color: var(--primary);
+    color: var(--light);
+    
+}
+
+.btn--outline {
+    background-color: var(--dark);
+    color: var(--light);
+
+
+}
+
+/* BORDER */
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.grad-border::after,.grad-border::before {
+    box-sizing: content-box;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    border-radius: var(--border-r);
+    translate: -50% -50%;
+    padding: 3px;
+    /* background: rgba(255, 0, 0, 0.432); */
+    
+    background: conic-gradient(from 
+    var(--angle), transparent 70%, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #9400D3, #FF0000);
+
+    animation: 3s spin linear  infinite;
+
+}
+
+.grad-border::before {
+    filter: blur(2rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    0% {
+        --angle:0deg;
+    }
+    50% {
+        --angle:180deg;
+
+    }
+
+    100% {
+        --angle:360deg;
+
+    }
+   
+}

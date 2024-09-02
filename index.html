@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INFOWEB2.0</title>
+
+  <!-- TODO: add meta tag -->
+ 
+  <link rel="stylesheet" href="general.css" />
+
+  <link rel="stylesheet" href="css/s-hero.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/feature.css">
+  <link rel="stylesheet" href="css/wc-us.css">
+  <link rel="stylesheet" href="css/price-table.css">
+  <link rel="stylesheet" href="css/experience.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="queries.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <script src="script/script.js" defer></script>
+
+ 
+
+</head>
+
+<body>
+
+  
+
+  <header class="header">
+    <img src="assets/logo.png" class="logo" alt="logo-image">
+
+    <nav class="header-navbar">
+      <ul class="header-ul">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </nav>
+
+    <a href="#" class="btn btn-header ">Quote</a>
+
+    <div class="header-navbar-mob" onclick=toggleMenu()>
+      <i class="fa-solid fa-bars feature-icon"></i>
+      
+    </div>
+
+
+
+  </header>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar no-display">
+    <i onclick=toggleMenu() class="fa-solid fa-x feature-icon pd-b-md"></i>
+
+    <ul class="sidebar-ul pd-b-md">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/gallery.html">Gallery</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+   
+
+      <a href="#" class="btn btn--full ">Request a Quote</a>
+    
+    
+  </div>
+  <!-- SIDEBAR -->
+
+  <section class="section-hero ">
+    <!-- First Item -->
+
+    <div class="wrapper hero grid grid--2--cols " 
+    data-aos="fade-up" data-aos-duration="1500">
+
+      <div class="hero-text-box ">
+        <p class="hero-text-tag hightlight-box">we'are web developer</p>
+        <h1 class="primary-heading">
+          Design, Develop, and Transform Your Digital Presence With INFO<span style="color: red;">WT</span>
+        </h1>
+
+        <p class="hero-description">
+          We build website that standout. <br> There are three responses to a piece
+          of design <br> - yes, no, and WOW! Wow is the one to aim for. <br>We Provide
+          24/7 service and maintance.
+        </p>
+
+        <div class="hero-btn">
+
+          <a href="#" class="btn btn--full m-r-sm ">Request a Quote</a>
+          <a href="/contact.html" class="btn btn--outline">Contact us &rarr; </a>
+        </div>
+      </div>
+
+      <!-- Second Item -->
+      <div class="hero-image-box grid grid--2--cols">
+        <div class="image-box image-box-1"></div>
+        <div class="image-box image-box-2"></div>
+        <div class="image-box image-box-3"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="features ">
+    <!-- <div class="section-heading center"> -->
+    <!-- 
+      <p class="tag text-3d">Our Features</p>
+    </div> -->
+
+    <div class="wrapper flex--wrap pd-md-topbot">
+      <div class="feature-card" 
+      
+      data-aos="fade-right" data-aos-duration="1500"
+      data-aos-delay="50"
+
+      >
+        <i class="fa-solid fa-pen-nib feature-icon" style="color: #df1a20;"></i>
+        <h2 class="secondary-heading secondary-heading-pad">Web Design</h2>
+        <p class="feature-card-description">Infowt Information Web Technologies is one of
+          the Best Creative Web Design Service Provider</p>
+      </div>
+
+
+      <div class="feature-card"
+      
+      data-aos="fade-right" data-aos-duration="1500"
+      data-aos-delay="40"
+
+      
+      
+      >
+        <i class="fa-solid fa-code feature-icon" style="color: #df1a20;"></i>
+        <h2 class="secondary-heading secondary-heading-pad">Web Development</h2>
+        <p class="feature-card-description">Infowt Information Web Technologies is one of
+          the Best Creative Web Design Service Provider</p>
+      </div>
+
+      <div class="feature-card"
+      
+      
+      data-aos="fade-right" data-aos-duration="1500"
+      data-aos-delay="30"
+
+      
+      >
+        <i class="fa-solid fa-mobile feature-icon" style="color: #df1a20;"></i>
+        <h2 class="secondary-heading secondary-heading-pad">App Development</h2>
+        <p class="feature-card-description">Infowt Information Web Technologies is one of
+          the Best Creative Web Design Service Provider</p>
+      </div>
+
+      <div class="feature-card" 
+      
+      
+
+      data-aos="fade-right" data-aos-duration="1500"
+      data-aos-delay="20"
+
+      
+      
+      
+      >
+        <i class="fa-solid fa-money-bill-trend-up feature-icon" style="color: #df1a20;"></i>
+        <h2 class="secondary-heading secondary-heading-pad">Digital Marketing</h2>
+        <p class="feature-card-description">Infowt Information Web Technologies is one of
+          the Best Creative Web Design Service Provider</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wc-us">
+    <div class="wrapper grid grid--2--cols">
+      <div class="wc-us-text"
+      
+
+      data-aos="fade-right" data-aos-duration="1500"
+      data-aos-delay="50"
+
+      
+      >
+        <h2 class="primary-heading 
+          ">
+          Why Choose Us For Your Project?
+        </h2>
+
+        <ul class="wc-us-description">
+          <li>We are having more than 8+ years of B2B client services and Industry experience</li>
+          <li>
+            We have a highly experienced and creative team of
+            experts who have strong web technology skills
+          </li>
+          <li>
+            Served 500+ clients worldwide till date
+          </li>
+          <li>
+            We believe in customer satisfaction and hence we
+            deliver the quality services
+          </li>
+
+          <li>
+            We understand clients’ requirements and deliver
+            tailored services
+          </li>
+          <li>
+            We believe in quality services keep the client
+            longterm relation trusted with the business
+          </li>
+        </ul>
+
+
+        <a href="#" class="btn btn--outline">Contact us &rarr; </a>
+      </div>
+
+      <div class="wc-us-cards grid grid--2--cols"
+      
+      
+
+      
+      >
+
+        <div class="card">
+          <i class="fa-solid fa-gear  feature-icon"></i>
+          <h2 class="secondary-heading secondary-heading-pad">
+            All size business
+          </h2>
+          <p class="feature-card-description">We do websites & mobile apps for all sizes of businesses.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-people-group feature-icon" style="color: #b028ff;"></i>
+          <h2 class="secondary-heading secondary-heading-pad">
+            Experience Team
+          </h2>
+          <p class="feature-card-description">We do websites & mobile apps for all sizes of businesses.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-rocket feature-icon" style="color: #1a9cff;"></i>
+          <h2 class="secondary-heading secondary-heading-pad">
+            Awesome Results
+          </h2>
+          <p class="feature-card-description">We do websites & mobile apps for all sizes of businesses.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-regular fa-calendar-check feature-icon" style="color: rgba(47, 255, 127, 0.945);"></i>
+          <h2 class="secondary-heading secondary-heading-pad">
+            On-time Delivery
+          </h2>
+          <p class="feature-card-description">We do websites & mobile apps for all sizes of businesses.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="experience">
+    <div class="wrapper pd-b-md "
+    
+
+    data-aos="fade-right" data-aos-duration="1500"
+    data-aos-delay="50"
+>
+
+
+      <div class="experience-card">
+
+        <h2 class="secondary-heading ">8+</h2>
+        <p class="">Year Of Experience</p>
+      </div>
+
+      <div class="experience-card">
+
+        <h2 class="secondary-heading ">10+</h2>
+        <p class="">Applications</p>
+      </div>
+
+      <div class="experience-card">
+
+        <h2 class="secondary-heading   ">500+</h2>
+        <p class="">Projects</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="slider ">
+    <div class="section-heading">
+
+      <p class="tag text-3d">Our Latest Projects</p>
+    </div>
+
+
+    <ul class="wrapper grid  slider-list "
+    
+
+    data-aos="fade-out" data-aos-duration="1500"
+    data-aos-delay="50"
+
+    >
+      
+      <li class="project-card ">
+        <img src="assets/screenshots/1.webp" alt="">
+      </li>
+      <li class="project-card">
+        <img src="assets/screenshots/2.webp" alt="" srcset="">
+      </li>
+      <li class="project-card"><img src="assets/screenshots/3.webp" alt="" srcset=""></li>
+      <li class="project-card"><img src="assets/screenshots/4.webp" alt="" srcset=""></li>
+      <li class="project-card"><img src="assets/screenshots/5.webp" alt="" srcset=""></li>
+      <li class="project-card"><img src="assets/screenshots/6.webp" alt="" srcset=""></li>
+      <li class="project-card"><img src="assets/screenshots/7.webp" alt="" srcset=""></li>
+
+    </ul>
+      
+   <div class="slider-controls pd-b-md">
+    <div class="wrapper ">
+    <i onclick=prev() class="feature-icon m-r-sm left-arrow" style="color: #fff;">&larr;</i>
+
+    <i onclick=next() class="feature-icon right-arrow" style="color: #fff;">&rarr;</i>
+  </div>
+  </div> 
+
+  </section>
+
+  <!-- <div class="grad-border"></div>s -->
+
+  <section class="launch-btn wrapper pd-b-lg">
+    <a href="#" class="btn grad-border">Launch Your Website Today</a>
+  </section>
+
+
+  <section class="price-table ">
+
+    <div class="secondary-heading center pd-md-topbot">
+    <p class="tag text-3d">Our Pricing</p>
+  </div>
+    <div class="wrapper pd-b-lg"
+    
+
+
+    data-aos="fade-right" data-aos-duration="1500"
+    data-aos-delay="50"
+
+    
+    >
+      <div class="price-card price-card-1">
+
+        <h2 class="price-heading ">
+          Basic Plan
+        </h2>
+
+        <p class="price-description">
+          A static website contains Web pages with fixed content. Each page is coded in HTML and displays the same
+          information to every visitor.
+        </p>
+
+        <hr>
+
+        <h1 class="price-text">
+          &#8377;14999/-
+        </h1>
+
+        <a href="#" class="btn get-started">Get Started Now</a>
+
+        <ul class="price-card-feature">
+          <li>5 to 10 Pages</li>
+          <li>No My SQL Data Base</li>
+          <li>No Content Management</li>
+        </ul>
+
+        <a href="#" class="btn">*Domain & Hosting Charge Extra</a>
+        <a href="#" class="btn">Development Time: 1 Week</a>
+
+      </div>
+
+      <div class="price-card price-card-2">
+
+        <h2 class="price-heading ">
+          Standard Plan
+        </h2>
+
+        <p class="price-description">
+          Dynamic websites are websites where you can have Content Management System (CMS)
+          through which you can Manage your content.
+        </p>
+
+        <hr>
+
+        <h1 class="price-text">
+          &#8377;19999/-
+        </h1>
+
+        <a href="#" class="btn get-started">Get Started Now</a>
+
+        <ul class="price-card-feature">
+          <li>10 to 15 Pages</li>
+          <li>1 My SQL Data Base</li>
+          <li>Content Management</li>
+        </ul>
+
+        <a href="#" class="btn">*Domain & Hosting Charge Extra</a>
+        <a href="#" class="btn">Development Time: 1 Week</a>
+
+      </div>
+
+      <div class="price-card price-card-3">
+
+        <h2 class="price-heading ">
+          Premium Plan
+        </h2>
+
+        <p class="price-description">
+          Premium Website is a Plan which contains some concept or custom along with Content
+          Management System (CMS) with Admin Panel.
+        </p>
+
+        <hr>
+
+        <h1 class="price-text">
+          &#8377;39999/-
+        </h1>
+
+        <a href="#" class="btn get-started">Get Started Now</a>
+
+        <ul class="price-card-feature">
+          <li>5 to 10 Pages</li>
+          <li>1 My SQL Data Base</li>
+          <li>Content Management</li>
+        </ul>
+
+        <a href="#" class="btn">*Domain & Hosting Charge Extra</a>
+        <a href="#" class="btn">Development Time: 1-2 Weeks</a>
+
+      </div>
+      <!-- <div class="price-card price-card-2">
+
+      </div>
+      <div class="price-card price-card-3"> -->
+
+    </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="wrapper grid grid--auto--cols ">
+      <ul class="footer-card">
+        <h3 class="secondary-heading">INFO<span style="color: red;">WT</span></h3>
+        <p class="address">
+          Infowt, 2nd Floor, Kabir Chowk, in front of SBI SME Branch, Raigarh
+          Chhattisgarh 496001
+        </p>
+
+        <li class="contact-numbers">
+          <a href="tel:+">Call No.: 09644772225</a>
+          <a href="tel:+">09644772226</a>
+          <a href="tel:+">07762358970</a>
+          <a href="tel:+">09111772226</a>
+        </li>
+      </ul>
+      
+      <ul class="footer-card">
+        <h3 class="secondary-heading">Affiliate Partners</h3>
+
+        <li><i class="fa fa-chevron-right"></i> <a href="https://bit.ly/hostingerinfowt">Hostinger</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="https://bigrock-in.sjv.io/infowt">BigRock</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="https://www.interserver.net/r/767914">InterServer</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="https://bit.ly/hawkhostinfowt">HawkHost</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a
+            href="https://www.a2hosting.com/?aid=66554700c66b0&amp;bid=05a5558f">A2Hosting</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="https://bit.ly/cloudwaysinfowt">Cloudways</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="http://click.dreamhost.com/SHZi">DreamHost</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="https://bit.ly/digitaloceaninfowt">DigitalOcean</a></li>
+
+      </ul>
+      
+      <ul class="footer-card">
+        <h3 class="secondary-heading">
+          Our Services
+        </h3>
+        
+        <li><i class="fa fa-chevron-right"></i> <a href="#">Web Design</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="#">App Development</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="#">Web Development</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="#">Product Management</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="#">Digital Marketing</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="#">Graphic Design</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="#">Logo Design</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="#">SEO</a></li>
+        </ul>
+
+       <ul class="footer-card">
+        <h3 class="secondary-heading">
+          Useful Links
+        </h3>
+
+        <li><i class="fa fa-chevron-right"></i> <a href="blog">Our Blog</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="privacy-policy.html">Terms &amp; Policies</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="refund.html">Refund Policy</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="payment.html">Payment</a></li>
+        
+     
+       </ul>
+    
+    
+          <ul class="footer-card">
+            <h3 class="secondary-heading">
+              Get Involved
+            </h3>
+
+        <li><i class="fa fa-chevron-right"></i> <a href="#">Careers</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="#">Partnerships</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="#">Volunteer</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="#">Events</a></li>
+        <li><i class="fa fa-chevron-right"></i> <a href="#">Community</a></li>
+    
+          </ul>
+  <ul class="footer-card">
+    <h3 class="secondary-heading">
+      Govt Recognition
+    </h3>
+
+    <li><i class="fa fa-chevron-right"></i> Startup India Recognition: DIPP171412</li>
+    <li><i class="fa fa-chevron-right"></i> CIN: U62090CT2024PTC016521</li>
+    <li><i class="fa fa-chevron-right"></i> GSTIN: 22AAHCI7420A1Z7</li>
+ 
+  </ul>
+
+    </div>
+
+    <div class="copyright pd-b-md">
+      <h4>copyright &copy;2024 Infowt Information Web Technologies Pvt. Ltd.</h4>
+    </div>
+  </footer>
+
+  
+  <script src="https://kit.fontawesome.com/9d3b657df8.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+
+</html>

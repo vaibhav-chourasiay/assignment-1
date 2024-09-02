@@ -1,0 +1,17 @@
+.experience .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.experience .secondary-heading {
+    color: var(--primary);
+    padding: 0.2rem 0;
+    font-size: var(--fs-650);
+}
+
+.experience-card p {
+    font-weight: 600;
+
+    color: #333;
+}

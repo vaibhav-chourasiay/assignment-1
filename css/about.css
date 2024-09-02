@@ -1,0 +1,77 @@
+.about .wrapper, .mission .wrapper {
+    margin-top: clamp(10rem ,20vh , 20rem) ;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+}
+
+
+.mission .wrapper {
+    margin-top: 0;
+}
+
+
+.about-image-box, .mission-image-box {
+    flex: 1;
+    min-height: 50rem;
+
+    background-image: url(../assets/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about-text-box, .mission-text-box {
+    flex: 1;
+}
+
+
+.about-text-decription , .mission-description{
+    font-size: var(--fs-500);
+    line-height: 1.5;
+    padding: 1.2rem 0;
+
+}
+
+
+
+
+/*  */
+
+.box {
+    height: 30rem;
+    background-color: aqua;
+    flex: 1;
+}
+/*  */
+
+.card {
+    width: 100%;
+    max-width: 30rem;
+    /* height: 20rem; */
+    display: flex;
+    flex-direction: row;
+    background-color: cyan;
+    gap: 1.2rem;
+    align-items: flex-start;
+    background-color: var(--tint);
+}
+
+.card .secondary-heading {
+    padding: 0.8rem;
+    background-color: var(--light);
+    border-radius: 50%;
+
+}
+
+.card-text .secondary-heading {
+    background-color: transparent;
+    padding: 0;
+}
+
+.card-text .card-description {
+    padding: 1rem 0;
+    font-weight: 600;
+    opacity: 0.6;
+    line-height: 1.5;
+}
+

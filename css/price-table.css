@@ -1,0 +1,101 @@
+.price-table {
+    position: relative;
+}
+
+
+.price-table::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: var(--primary);
+    z-index: -1;
+
+
+
+}
+
+.price-table .wrapper {
+    display: flex;
+    gap: 4.2rem;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3.6rem 0;
+}
+
+
+.price-card {
+    width: 100%;
+    max-width: 30rem;
+    /* height: 40rem; */
+
+    display: flex;
+    flex-flow: column nowrap;
+    /* align-items: flex-start; */
+    padding: 2.4rem;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), 10px 10px 20px rgba(0, 0, 0, 0.15), 15px 15px 30px rgba(0, 0, 0, 0.1);
+    /* background-color:#3d2d84; */
+    border-radius: var(--border-r);
+
+    transition: transform 1s;
+
+}
+
+.price-card:hover {
+    transform: scale(1.1);
+}
+
+.price-heading {
+    font-family: var(--ff-head);
+    font-size: var(--fs-650);
+        font-weight: 300;
+}
+
+
+.price-description {
+    padding: 1.2rem 0;
+    line-height: 1.5;
+    font-weight: 600;
+    color: var(--dark);
+    opacity: 0.6;
+}
+
+.price-text {
+    font-size: var(--fs-650);
+    padding: 1.2rem 0;
+}
+
+.price-card .btn {
+    background: var(--dark);
+    text-align: center;
+    color: var(--light);
+    margin: 1.2rem 0;
+}
+
+.price-card-feature li {
+    margin: 0.8rem 0;
+    list-style-position: inside;
+    font-weight: 600;
+}
+
+.price-card .get-started {
+    background-color: #3259e8;
+    background-color: var(--primary);
+}
+
+.price-card-1 {
+    background-color: #F5F5F5;
+}
+
+.price-card-2 {
+    background-color: #E0F7FA;
+    transform: scale(1.1);
+
+}
+
+.price-card-3 {
+    background-color: #FFF9C4;
+
+}
