@@ -95,6 +95,16 @@
 
 /* 448 px */
 @media  screen and (max-width: 28rem) {
+
+    :root {
+        --fs-650: 3.8rem;
+        --fs-600: 2.2rem;
+        --fs-500: 1.6rem;
+        --fs-450: 1.4rem;
+        --fs-400: 1.2rem;
+    }
+
+    
     .slider .wrapper 
     {
         /* background-color: red; */

@@ -23,7 +23,7 @@
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
+  <script src="script/include_html.js" defer></script>
   <script src="script/script.js" defer></script>
 
  
@@ -33,7 +33,7 @@
 <body>
 
   
-
+<!-- 
   <header class="header">
     <img src="assets/logo.png" class="logo" alt="logo-image">
 
@@ -56,10 +56,12 @@
 
 
 
-  </header>
+  </header> -->
 
   <!-- SIDEBAR -->
-  <div class="sidebar no-display">
+  <!-- <div class="sidebar no-display">
+
+
     <i onclick=toggleMenu() class="fa-solid fa-x feature-icon pd-b-md"></i>
 
     <ul class="sidebar-ul pd-b-md">
@@ -75,7 +77,15 @@
     
     
   </div>
-  <!-- SIDEBAR -->
+  SIDEBAR -->
+
+
+  <header class="header" id="navbar"></header>
+
+  <div class="sidebar no-display" id="sidebar-section"></div>
+
+
+
 
   <section class="section-hero ">
     <!-- First Item -->
@@ -86,17 +96,20 @@
       <div class="hero-text-box ">
         <p class="hero-text-tag hightlight-box">we'are web developer</p>
         <h1 class="primary-heading">
-          Design, Develop, and Transform Your Digital Presence With INFO<span style="color: red;">WT</span>
+          Design, Develop, and Transform Your Digital Presence With INFO<span class="red">WT</span>
         </h1>
 
         <p class="hero-description">
-          We build website that standout. <br> There are three responses to a piece
-          of design <br> - yes, no, and WOW! Wow is the one to aim for. <br>We Provide
+          There are three responses to a piece
+          of design - yes, no, and WOW! Wow is the one to aim for.
+          We build website that standout. We Provide
           24/7 service and maintance.
+
         </p>
 
         <div class="hero-btn">
 
+          
           <a href="#" class="btn btn--full m-r-sm ">Request a Quote</a>
           <a href="/contact.html" class="btn btn--outline">Contact us &rarr; </a>
         </div>
@@ -455,8 +468,8 @@
   </section>
 
 
-  <footer class="footer">
-    <div class="wrapper grid grid--auto--cols ">
+  <footer class="footer" id="footer-section">
+    <!-- <div class="wrapper grid grid--auto--cols ">
       <ul class="footer-card">
         <h3 class="secondary-heading">INFO<span style="color: red;">WT</span></h3>
         <p class="address">
@@ -544,7 +557,7 @@
 
     <div class="copyright pd-b-md">
       <h4>copyright &copy;2024 Infowt Information Web Technologies Pvt. Ltd.</h4>
-    </div>
+    </div> -->
   </footer>
 
   
