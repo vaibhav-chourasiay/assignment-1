@@ -1,6 +1,9 @@
 .footer {
     background-color: var(--dark);
-    padding: 3.2rem 0 0 0;
+    padding: 5.2rem 0 0 0;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+
 }
 
 .footer .wrapper {
@@ -18,13 +21,17 @@
     flex-direction: column;
 } */
 
-.footer a {
+.footer a:link,.footer a:visited {
     color: var(--light);
     opacity: 0.4;
     padding-left: 0.2rem;
 }
 
+.footer a:hover {
+    color: var(--primary);
+    opacity: 1;
 
+}
 
 .footer-card {
     /* height: 30rem; */
