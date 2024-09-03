@@ -280,14 +280,44 @@ margin-right: 1.6rem;
 .tag {
     font-family: var(--ff-head);
     text-transform: capitalize;
-    letter-spacing: 0.7rem;
-    /* font-weight: 900; */
+    letter-spacing: 1px;
+    font-weight: 900;
     font-size: var(--fs-650);
     color: var(--light);    
 
-    /* text-align: center; */
+    text-align: center;
+    position: relative;
     
 }
+
+.tag::before {
+    bottom: -15px;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    border-radius: var(--border-r);
+    animation: color-change 2s ease infinite;
+}
+
+
+@keyframes color-change {
+    0% {
+        width: 0%;
+        box-shadow: 1px 1px 2px #fff;
+    }
+
+
+
+    100%{
+        width: 100%;
+        box-shadow: 2px 2px 2px #fff;
+
+
+    }
+}
+
 
 /* Feature card */
 

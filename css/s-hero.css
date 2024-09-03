@@ -47,6 +47,10 @@
 
 }
 
+.hero-btn .btn--full {
+    margin-bottom: 1.4rem;
+}
+
 .image-box {
     border-radius: var(--border-r);
     background-position: center;
