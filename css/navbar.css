@@ -91,16 +91,28 @@
 
 .sidebar-ul li a {
     display: block;
-    color: var(--dark);
     padding: 2.4rem 0;
     font-size: var(--fs-600);
     font-weight: 600;
-    opacity: 0.6;
 
     text-align: center;
-
+    transition: opacity 0.7s;
 
 }
+
+.sidebar li a:link, .sidebar li a:visited {
+    color: var(--light);
+    opacity: 0.7;
+
+}
+
+.sidebar li a:hover, .sidebar li a:focus {
+    color: var(--light);
+    scale: 1.1;
+    opacity: 1;
+
+}
+
 
 .sidebar .btn--full {
     width: fit-content;
